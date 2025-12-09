@@ -1,0 +1,26 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.book-cover {
+    height: 250px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.price-tag {
+    font-weight: bold;
+    color: #198754;
+    font-size: 1.2rem;
+}
