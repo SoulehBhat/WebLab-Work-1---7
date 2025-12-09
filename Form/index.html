@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <header class="form-header">
+            <h1>Event Registration</h1>
+            <p>Join us for our upcoming community gathering.</p>
+        </header>
+
+        <form action="#" method="POST">
+            <div class="form-grid">
+                
+                <div class="form-group">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ex: SoulehBhat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: soulehbhatXYZ@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="96226xxxxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-select" class="required">Select Event</label>
+                    <select id="event-select" name="event" required>
+                        <option value="" disabled selected>-- Choose an option --</option>
+                        <option value="workshop">Community Workshop</option>
+                        <option value="fundraiser">Charity Fundraiser</option>
+                        <option value="meetup">Weekly Meetup</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Dietary Preferences (Check all that apply)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="diet" value="vegetarian"> Vegetarian
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="diet" value="vegan"> Vegan
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="diet" value="gluten-free"> Gluten Free
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="diet" value="none"> None
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="submit-btn">Register Now</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
