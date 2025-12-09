@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Conditional Greeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Greeting Generator</h1>
+        
+        <div class="input-group">
+            <label for="nameInput">Your Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+        </div>
+
+        <div class="input-group">
+            <label for="moodSelect">Current Mood:</label>
+            <select id="moodSelect">
+                <option value="happy">Happy</option>
+                <option value="tired">Tired</option>
+                <option value="excited">Excited</option>
+                <option value="stressed">Stressed</option>
+            </select>
+        </div>
+
+        <button id="greetBtn">Get Greeting</button>
+
+        <div id="greetingContainer" class="hidden">
+            <h2 id="timeGreeting"></h2>
+            <p id="personalMessage"></p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
