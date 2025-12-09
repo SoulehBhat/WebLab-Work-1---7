@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themed Layout Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">StartupUI</div>
+            <button id="theme-toggle" class="btn btn-outline">Switch Theme</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Adaptive Theming with SCSS</h1>
+                <p>A demonstration of switching themes while maintaining consistent typography and spacing variables.</p>
+                <div class="cta-group">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container grid-layout">
+                <div class="card">
+                    <h3>Consistent Typography</h3>
+                    <p>Fonts remain scalable and legible across both light and dark modes.</p>
+                </div>
+                <div class="card">
+                    <h3>Reusable Mixins</h3>
+                    <p>SCSS mixins handle flexbox layouts and responsive breakpoints efficiently.</p>
+                </div>
+                <div class="card">
+                    <h3>Custom Properties</h3>
+                    <p>CSS variables handle the color mapping for instant theme switching.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 StartupUI Experiment.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-theme', newTheme);
+        });
+    </script>
+</body>
+</html>
